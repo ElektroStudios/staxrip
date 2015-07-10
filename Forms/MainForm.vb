@@ -17,6 +17,12 @@ Imports System.Runtime.InteropServices
 Class MainForm
     Inherits FormBase
 
+' Example usage of .\General\WindowSticker.vb
+Private windowSticker As New WindowSticker(ClientForm:=Me) With {.SnapMargin = 35}
+' Of course could be loaded in the constructor instead here.
+' If accept this change, don't forget to set the namespace of that class.
+' --------------------------------------------------------------------------------
+
 #Region " Designer "
     Protected Overloads Overrides Sub Dispose(disposing As Boolean)
         If disposing Then
